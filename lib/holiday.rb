@@ -54,6 +54,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.map do |season, holiday|
     season = season.to_s
     season = season!
+    puts season
   end
 end
 
