@@ -52,12 +52,13 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   holiday_hash.map do |season, holiday|
-    binding.pry
+    
     season = season.to_s
     season = season.capitalize
     season << ":"
     puts season
-    season.map
+    season.map do | x,y|
+      binding.pry
     holiday = holiday_hash[holiday].to_s
     
     holiday = holiday.capitalize
